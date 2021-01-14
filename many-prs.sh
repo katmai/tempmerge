@@ -10,6 +10,6 @@ EOF
 git checkout -b $i
 git add .
 git commit -m "bug $i fix commit"
-gh pr create --title "The bug $i is fixed" --body "Everything works again" --repo $REPO
+gh pr create -R $REPO --title "The bug $i is fixed" --body "Everything works again"
 done
 git checkout main
