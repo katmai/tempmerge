@@ -2,6 +2,6 @@
 PR=$1
 for i in $(seq 1 $PR);
 do
-git branch -d $i
+git branch -D $i
 done
 rm -rf file*
